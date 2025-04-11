@@ -1,1 +1,1 @@
-web: docker
+web: docker build . && docker run
