@@ -16,6 +16,6 @@ RUN set -ex; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/*
 
-ENTRYPOINT ["java", "-Xms1g", "-Xmx1g", "-Djava.net.preferIPv4Stack=true"]
+ENTRYPOINT ["java", "-Xms128m", "-Xmx256m", "-Djava.net.preferIPv4Stack=true"]
 
 CMD ["-jar", "tracker-server.jar", "conf/traccar.xml"]
