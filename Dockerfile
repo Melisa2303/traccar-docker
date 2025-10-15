@@ -19,4 +19,5 @@ RUN set -ex; \
 
 EXPOSE 8082
 
+# OJO: El nombre del jar puede variar. ¡Revisa el log del comando ls!
 CMD ["java", "-Xms128m", "-Xmx256m", "-Djava.net.preferIPv4Stack=true", "-jar", "tracker-server.jar", "conf/traccar.xml"]
